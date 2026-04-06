@@ -1,5 +1,6 @@
 // TODO 1: Import and Create express app instance
 import express from "express";
+import { getRandomQuote } from "./quotes";
 
 const app = express();
 
@@ -28,3 +29,6 @@ app.get("/api/quote", (req, res) => {
    });
 
 // TODO 7: Start server using app.listen
+app.listen(PORT, () => {
+     console.log(`Server is running on port ${PORT}`);
+   });
