@@ -1,6 +1,5 @@
 // TODO 1: Import and Create express app instance
 import express from "express";
-import { getRandomQuote } from "./quotes";
 
 const app = express();
 
@@ -14,7 +13,7 @@ app.use(cors());
 
 // TODO 5: Import and apply Morgan middleware
 import morgan from "morgan";
-import { getRandomQuote } from "./quotes";
+import { getRandomQuote } from "./quotes.js";
 app.use(morgan("dev"));
 
 // TODO 6.1: Create root route "/"
